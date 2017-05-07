@@ -9,7 +9,17 @@ const path = require('path')
 const {CheckerPlugin} = require('awesome-typescript-loader')
 
 // Hot CSS updates
-config.module.rules[1].loader = ['style-loader', 'css-loader', 'sass-loader']
+config.module.rules[1].loader = [
+	'style-loader',
+	{
+		loader: 'css-loader',
+		options: {sourceMap: true}
+	},
+	{
+		loader: 'sass-loader',
+		options: {sourceMap: true}
+	}
+]
 
 config.plugins = [new CheckerPlugin()]
 
