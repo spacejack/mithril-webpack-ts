@@ -1,5 +1,5 @@
 import * as m from 'mithril'
-import './index.css'
+import './index.pcss'
 
 export default {
 	view() {

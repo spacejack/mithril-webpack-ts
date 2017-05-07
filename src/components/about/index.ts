@@ -1,6 +1,6 @@
 import * as m from 'mithril'
 import nav from '../nav'
-import './index.css'
+import './index.pcss'
 
 export default {
 	view (vnode) {
