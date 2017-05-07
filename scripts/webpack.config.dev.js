@@ -9,16 +9,32 @@ const path = require('path')
 const {CheckerPlugin} = require('awesome-typescript-loader')
 
 // Hot CSS updates
+config.module.rules[1].use[1].options.sourceMap = true
+config.module.rules[1].use[2].options.sourceMap = true
+
 config.module.rules[2].loader = [
-	'style-loader',
-	'css-loader',
+	{
+		loader: 'style-loader'
+	},
+	{
+		loader: 'css-loader',
+		options: {
+			sourceMap: true
+		}
+	},
 	{
 		loader: 'postcss-loader',
 		options: {
-			config: path.resolve(__dirname, 'postcss.config.js')
+			config: path.resolve(__dirname, 'postcss.config.js'),
+			sourceMap: true
 		}
 	},
-	'sass-loader'
+	{
+		loader: 'sass-loader',
+		options: {
+			sourceMap: true
+		}
+	}
 ]
 
 config.plugins = [new CheckerPlugin()]
