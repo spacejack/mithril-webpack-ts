@@ -8,6 +8,26 @@ const path = require('path')
 // https://github.com/webpack/webpack/issues/3460 is resolved.
 const {CheckerPlugin} = require('awesome-typescript-loader')
 
+config.module.rules[1].use = [
+	{
+		loader: 'style-loader'
+	},
+	{
+		loader: 'css-loader',
+		options: {
+			importLoaders: 1,
+			sourceMap: true
+		}
+	},
+	{
+		loader: 'postcss-loader',
+		options: {
+			config: path.resolve(__dirname, 'postcss.config.js'),
+			sourceMap: true
+		}
+	}
+]
+
 config.plugins = [new CheckerPlugin()]
 
 config.devServer = {
