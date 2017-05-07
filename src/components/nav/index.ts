@@ -13,7 +13,7 @@ export default {
 							oncreate: m.route.link,
 							class: r === '/' ? 'active' : ''
 						},
-						"Home"
+						'Home'
 					)
 				),
 				m('li',
@@ -23,7 +23,7 @@ export default {
 							oncreate: m.route.link,
 							class: r === '/about' ? 'active' : ''
 						},
-						"About"
+						'About'
 					)
 				)
 			)

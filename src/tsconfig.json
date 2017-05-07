@@ -14,6 +14,8 @@
     "strictNullChecks": true,
     "noImplicitThis": true
   },
+  "compileOnSave": false,
+  "buildOnSave": false,
   "atom": {
     "rewriteTsconfig": false
   }
