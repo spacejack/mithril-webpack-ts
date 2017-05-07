@@ -1,4 +1,4 @@
-# Mithril / Webpack / Typescript Example
+# Mithril / Webpack / Typescript / SASS / PostCSS Example
 
 ## Installation:
 
