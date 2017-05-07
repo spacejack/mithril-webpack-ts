@@ -10,9 +10,7 @@
 * **eslint** VSCode extension
 * **tslint** VSCode extension
 * **stylelint** VSCode extension
-* **postcss-sugarss-language** VSCode add-on
-
-Also note the `.vscode/settings.json` configs.
+* **postcss-sugarss-language** VSCode extension
 
 ## Start:
 
