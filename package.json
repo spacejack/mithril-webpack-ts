@@ -25,6 +25,7 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.17.0",
     "tslint": "^5.2.0",
+    "tslint-microsoft-contrib": "git://github.com/Microsoft/tslint-microsoft-contrib.git#releases",
     "typescript": "^2.3.2",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.5.0",
